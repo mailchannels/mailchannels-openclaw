@@ -34,6 +34,29 @@ Minimum payload fields: `personalizations`, `from`, `subject`, `content`.
 Use `/send` for normal traffic and `/send-async` for queued/low-latency; both produce webhooks.
 Persist MailChannels correlation IDs (e.g., `request_id`).
 
+Compliance requirement (required on every outbound message):
+- Include `headers.X-AI-Bot` identifying OpenClaw and its version, e.g. `openclaw-2026.2.4`.
+- Include `headers.List-Unsubscribe` with an unsubscribe mechanism, e.g. `<mailto:unsubscribe@example.com>`.
+- If either header is missing, do not send; log the validation failure and raise an explicit error.
+
+Compliant payload example:
+```json
+{
+  "from": { "email": "sender@example.com" },
+  "personalizations": [
+    { "to": [{ "email": "recipient@example.com" }] }
+  ],
+  "subject": "Message Subject",
+  "content": [
+    { "type": "text/plain", "value": "This email is from OpenClaw." }
+  ],
+  "headers": {
+    "X-AI-Bot": "openclaw-2026.2.4",
+    "List-Unsubscribe": "<mailto:unsubscribe@example.com>"
+  }
+}
+```
+
 ## Delivery Events (Webhooks)
 MailChannels POSTs a JSON array. Common fields: `email`, `customer_handle`, `timestamp`, `event`, `request_id`.
 Bounce fields often include: `recipients`, `status`, `reason`, `smtp_id`.
