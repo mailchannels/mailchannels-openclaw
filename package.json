@@ -1,0 +1,31 @@
+{
+  "name": "mailchannels-moltbot",
+  "version": "0.1.0",
+  "description": "MailChannels OpenClaw Moltbot skills and tooling.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailchannels/mailchannels-openclaw.git"
+  },
+  "homepage": "https://github.com/mailchannels/mailchannels-openclaw",
+  "bugs": {
+    "url": "https://github.com/mailchannels/mailchannels-openclaw/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": [
+    "mailchannels-email-api/SKILL.md",
+    "publish-skill.sh"
+  ],
+  "keywords": [
+    "mailchannels",
+    "openclaw",
+    "moltbot",
+    "email",
+    "skill"
+  ]
+}
