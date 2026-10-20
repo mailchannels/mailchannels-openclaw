@@ -3,7 +3,7 @@ set -euo pipefail
 
 SKILL_DIR="mailchannels-email-api"
 SLUG="mailchannels-email-api"
-VERSION="1.0.0"
+VERSION="1.0.1"
 
 # Ensure CLI is installed
 if ! command -v clawdhub >/dev/null 2>&1; then
