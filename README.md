@@ -11,15 +11,8 @@ Install it with the [skills CLI](https://skills.sh/docs):
 npx skills add mailchannels/mailchannels-openclaw
 ```
 
-## Other MailChannels agent skills
-
-This skill is a compact quick reference for OpenClaw. MailChannels maintains a
-broader set of agent skills, covering Email API evaluation, language SDKs,
-domain setup and operations, in its coding-agent plugins:
-
-- [MailChannels for Codex](https://github.com/mailchannels/mailchannels-codex-plugin)
-  (also installable with `npx skills add mailchannels/mailchannels-codex-plugin`)
-- [MailChannels for Claude Code](https://github.com/mailchannels/mailchannels-claude-code-plugin)
+For broader MailChannels skills, see
+[More MailChannels Skills](mailchannels-email-api/SKILL.md#more-mailchannels-skills).
 
 ## Tests
 
