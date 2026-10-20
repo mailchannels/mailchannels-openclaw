@@ -1,7 +1,7 @@
 ---
 name: mailchannels-email-api
 description: Send email via MailChannels Email API and ingest signed delivery-event webhooks into Clawdbot (Moltbot).
-homepage: https://docs.mailchannels.net/email-api/
+homepage: https://docs.mailchannels.com/email-api/
 metadata: {"moltbot":{"emoji":"📨","requires":{"env":["MAILCHANNELS_API_KEY","MAILCHANNELS_ACCOUNT_ID"],"bins":["curl"]},"primaryEnv":"MAILCHANNELS_API_KEY"}}
 ---
 
@@ -80,3 +80,6 @@ Also verify JSON body is an array and every event has `customer_handle == MAILCH
 Store your internal message ID + MailChannels IDs (e.g., `request_id`, `smtp_id`).
 Update delivery state from events: `processed`, `delivered`, `soft-bounced`, `hard-bounced`, `dropped`.
 Operational tips: respond 2xx quickly, process async, store raw events, dedupe retries.
+
+## More MailChannels Skills
+For maintained skills covering SDKs, domain setup and operations beyond this quick reference, see the [Codex plugin](https://github.com/mailchannels/mailchannels-codex-plugin) (`npx skills add mailchannels/mailchannels-codex-plugin --list`) and the [Claude Code plugin](https://github.com/mailchannels/mailchannels-claude-code-plugin).
