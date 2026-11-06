@@ -1,9 +1,11 @@
 # MailChannels Email API skill for OpenClaw
 
-The [`mailchannels-email-api`](mailchannels-email-api/SKILL.md) skill teaches
-OpenClaw (Moltbot) agents to send email with the
-[MailChannels Email API](https://docs.mailchannels.com/email-api/) and to ingest
-signed delivery-event webhooks.
+An OpenClaw (Moltbot) agent skill for
+[MailChannels Email API](https://docs.mailchannels.com/email-api/). The
+[`mailchannels-email-api`](mailchannels-email-api/SKILL.md) skill teaches your
+agent to send your app's transactional email, such as sign-up confirmations,
+password resets, receipts and notifications, and to receive signed delivery
+webhooks so it can track deliveries and bounces.
 
 Install it with the [skills CLI](https://skills.sh/docs):
 

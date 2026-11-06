@@ -2,8 +2,9 @@
 set -euo pipefail
 
 SKILL_DIR="mailchannels-email-api"
-SLUG="mailchannels-email-api"
-VERSION="1.0.1"
+# ClawHub listing: @deniz-mailchannels/mailchannels
+SLUG="mailchannels"
+VERSION="1.0.2"
 
 # Ensure CLI is installed
 if ! command -v clawdhub >/dev/null 2>&1; then

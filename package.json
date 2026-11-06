@@ -1,7 +1,7 @@
 {
   "name": "mailchannels-moltbot",
   "version": "0.1.0",
-  "description": "MailChannels OpenClaw Moltbot skills and tooling.",
+  "description": "OpenClaw (Moltbot) agent skill to send your app's transactional email through MailChannels Email API and receive signed delivery webhooks.",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
