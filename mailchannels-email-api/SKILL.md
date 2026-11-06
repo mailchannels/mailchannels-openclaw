@@ -1,6 +1,6 @@
 ---
 name: mailchannels-email-api
-description: Send email via MailChannels Email API and ingest signed delivery-event webhooks into Clawdbot (Moltbot).
+description: Send your app's transactional email, such as sign-up confirmations, password resets, receipts and notifications, through MailChannels Email API, and receive signed delivery webhooks in OpenClaw (Moltbot) to track deliveries and bounces.
 homepage: https://docs.mailchannels.com/email-api/
 metadata: {"moltbot":{"emoji":"📨","requires":{"env":["MAILCHANNELS_API_KEY","MAILCHANNELS_ACCOUNT_ID"],"bins":["curl"]},"primaryEnv":"MAILCHANNELS_API_KEY"}}
 ---
